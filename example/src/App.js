@@ -1,17 +1,36 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
-import { Button } from '4all-ui'
+import { Tag } from '4all-ui';
 
 export default class App extends Component {
-  render () {
+  render() {
     return (
       <div>
-        <Button onClick={() => console.log('click')} bgColor="#f82000" customStyles={{
-          color: '#fff',
-          fontSize: '40px',
-          width: '400px',
-        }}>Continuar</Button>
+        <Tag closeIcon>
+          Label
+        </Tag>
+
+        <Tag>
+          Label
+        </Tag>
+
+        <Tag error>
+          Label
+        </Tag>
+
+        <Tag secondary>
+          Label
+        </Tag>
+
+        <Tag disabled>
+          Label
+        </Tag>
+
+        <Tag customStyles={{backgroundColor: 'white', border: '1px solid #979797', color: '#6495ED'}}>
+          Label
+        </Tag>
+
       </div>
-    )
+    );
   }
 }

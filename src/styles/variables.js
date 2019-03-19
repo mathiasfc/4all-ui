@@ -17,5 +17,6 @@ export const GRAY_DARKER = '#333333';
 export const GRAY_MEDIUM = '#979797';
 export const GRAY_MEDIUM_2 = '#E4E4E4';
 export const GRAY_LIGHT = '#F5F5F5';
+export const GRAY_LIGHTER = '#e4e4e4';
 
 export const BORDER_RADIUS_1 = '3px';

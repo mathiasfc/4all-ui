@@ -2,8 +2,9 @@ import React from 'react';
 import { storiesOf } from '@storybook/react'; // eslint-disable-line import/no-extraneous-dependencies
 import { action } from '@storybook/addon-actions'; // eslint-disable-line import/no-extraneous-dependencies
 import Button from '../components/Button';
-import { GRAY_DARKER, FONT_SIZE_4, INFO_COLOR } from '../styles/variables';
 import Loader from '../components/Loader';
+import { GRAY_DARKER, FONT_SIZE_4, INFO_COLOR } from '../styles/variables';
+import Tag from '../components/Tag';
 
 storiesOf('Button', module)
   .add('primary style', () => (
@@ -80,4 +81,29 @@ storiesOf('Loader', module)
         width="10px"
       />
     </div>
+  ));
+
+  storiesOf('Tag', module)
+  .add('with close button', () => (
+    <Tag>Label</Tag>
+  ))
+  .add('Primary Style', () => (
+    <Tag>Label</Tag>
+  ))
+  .add('Error Style', () => (
+    <Tag error>Label</Tag>
+  ))
+  .add('Secondary Style', () => (
+    <Tag secondary>Label</Tag>
+  ))
+  .add('Disabled Style', () => (
+    <Tag disabled>Label</Tag>
+  ))
+  .add('Custom Style', () => (
+    <Tag customStyles={{
+      color: 'blue',
+    }}
+    >
+      Label
+    </Tag>
   ));
